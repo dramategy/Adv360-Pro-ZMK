@@ -37,11 +37,21 @@
 
         default_layer {
             bindings = <
-   &kp ESC     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5            &kp LEFT_BRACKET                                                                         &kp RIGHT_BRACKET  &kp N6   &kp N7        &kp N8    &kp N9    &kp N0  &kp BACKSPACE
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T                       &none                                                                                     &none   &kp Y    &kp U         &kp I     &kp O     &kp P       &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G                       &none     &kp LSHIFT     &kp TAB                    &kp ENTER     &kp RSHIFT              &none   &kp H    &kp J         &kp K     &kp L  &kp SEMI        &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                             &kp PERIOD                   &kp K_COPY                                     &kp N    &kp M     &kp COMMA   &kp DOT    &kp UP      &kp RSHFT
-     &mo 2  &kp GRAVE  &kp BSLH  &kp LEFT  &kp RIGHT                           &kp SPACE  &kp BACKSPACE  &kp PERIOD                  &kp K_PASTE  &kp BACKSPACE          &kp SPACE          &kp SQT  &kp QUESTION  &kp LEFT  &kp DOWN      &kp RIGHT
+          &kp ESC     &kp N1    &kp N2  &kp N3  &kp N4  &kp N5            &kp LEFT_BRACKET                                                                      &kp RIGHT_BRACKET  &kp N6          &kp N7     &kp N8    &kp N9    &kp N0  &kp BACKSPACE
+            &mo 1      &kp Q     &kp W   &kp E   &kp R   &kp T                       &none                                                                                  &none   &kp Y           &kp U      &kp I     &kp O     &kp P          &none
+ &kp LEFT_CONTROL      &kp A     &kp S   &kp D   &kp F   &kp G                       &none     &kp LSHIFT  &kp TAB                    &kp ENTER     &kp RSHIFT              &none   &kp H           &kp J      &kp K     &kp L  &kp SEMI          &none
+     &kp LEFT_ALT      &kp Z     &kp X   &kp C   &kp V   &kp B                                               &none                   &kp K_COPY                                     &kp N           &kp M  &kp COMMA   &kp DOT    &kp UP          &none
+ &kp LEFT_COMMAND  &kp GRAVE  &kp BSLH   &none   &none                           &kp SPACE  &kp BACKSPACE    &none                  &kp K_PASTE  &kp BACKSPACE          &kp SPACE          &kp APOSTROPHE  &kp SLASH  &kp LEFT  &kp DOWN      &kp RIGHT
+            >;
+        };
+
+        layer_Function {
+            bindings = <
+ &kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &kp F6                                                  &kp F7  &kp F8  &kp F9  &kp F10       &kp F11               &kp F12    &kp PRINTSCREEN
+  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans   &trans        &trans                &trans             &trans
+  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans   &trans        &trans                &trans             &trans
+  &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans   &trans        &trans  &kp C_BRIGHTNESS_INC             &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans   &trans  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN
             >;
         };
 
